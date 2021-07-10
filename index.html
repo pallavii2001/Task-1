@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up!</title>
+</head>
+<style>
+body {
+  background-color:rgb(0, 9, 128);
+}
+.new{
+    background-color: lightsteelblue;
+    text-align: center;
+    height: 550px;
+    width: 600px;
+    text-align: center;
+    border-style:solid;
+    border-radius: 8px;
+    border-width: 5px;
+    box-shadow: 5px 10px black;
+    margin-top:100px;
+    margin-left:500px;
+}
+h1{
+    font:xx-large;
+    font-style:italic;
+    color:black;
+}
+form{
+    font-size:larger;
+}
+.txt{
+    text-align:center;
+    border-width:2px;
+    border-radius: 8px;
+    border-color:black;
+    height:30px;
+    width:400px;
+    font-size:medium;
+
+}
+.btn{
+    border-color: black;
+    background-color: green;
+    font-size:large;
+    border-style:inset;
+    border-width:2px;
+    border-radius: 12px;
+    height: 30px;
+    width: 200px;
+}
+</style>
+
+<body>
+<div class="new">
+    <h1>Sign Up Form</h1>
+    <form action="backend.php">
+    
+        <div>
+        <input class="txt" type="text" placeholder="Name" id = "name" name="myname">
+        </div>
+        <br>
+        <div>
+        <input class="txt" type="text" placeholder="Email" id = "Email" name="myEmail">
+        </div>
+        <br>
+        <div>
+        <input class="txt" type="text" placeholder="Address" id = "Address" name="myaddress">
+        </div>
+        <br>
+        <div>
+        <input class="txt" type="text" placeholder="Phone no." id = "number" name="myNum">
+        </div>
+        <div>
+            
+            <input type="radio" id="Hardware" name="wing">Hardware
+            <input type="radio" id="Software" name="wing">Software
+            <input type="radio" id="Design" name="wing">Design
+            
+        </div>    
+        <p>Choose a skill <select name="myskill" id=skill>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JAVASCRIPT">JAVASCRIPT</option>
+            </select>
+        </p>
+        
+        <div>
+        <input class="txt" type="text" placeholder="Password" id = "password" name="mypassword">
+        </div>
+        <br>
+        <div>
+        <input class="txt" type="text" placeholder="Confirm Password" id = "confirm password" name="myconfpassword">
+        </div>
+        <br>
+        <input class=btn type="submit" value=Send>
+        </div>
+    
+    </form>
+</div>   
+</body>
+</html>
